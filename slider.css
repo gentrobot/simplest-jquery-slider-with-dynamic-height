@@ -1,0 +1,36 @@
+/*the main div that contains all the sliding div*/
+#container{
+    width:100px;
+    border:1px solid #000;
+    height:20px;
+    position: relative;
+    overflow:hidden;
+}
+/*there are 3 different classes
+* current - div that is presently visible
+* currentLeft - div that should slide from left on pressing previous
+* currentRight - div that should slide from right on pressing next
+*/
+.current{
+    width:99px;
+    height:auto;
+    position: absolute;
+    float: left;
+    left:0px;
+}
+
+.currentLeft{
+    width:99px;
+    height:auto;
+    position: absolute;
+    left:-100px;
+    float:left;
+}
+.currentRight{
+    width:99px;
+    height:auto;
+    position: absolute;
+    left:100px;
+    float:left;
+}
+
